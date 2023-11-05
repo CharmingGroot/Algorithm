@@ -7,7 +7,7 @@ class Solution {
         
         HashMap<String,Integer> run = new HashMap<>();
         HashMap<String,Integer> fin = new HashMap<>();
-        //
+        
         
         for(int i=0; i< participant.length; i++){
             
