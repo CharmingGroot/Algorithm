@@ -2,7 +2,7 @@ package algorithm_prac;
 
 import java.util.HashMap;
 
-class nov15 {
+class Solution {
     public String solution(String[] participant, String[] completion) {
         
         HashMap<String,Integer> run = new HashMap<>();
