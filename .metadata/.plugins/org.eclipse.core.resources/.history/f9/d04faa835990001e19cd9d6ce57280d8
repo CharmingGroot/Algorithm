@@ -1,0 +1,7 @@
+package algorithm_prac;
+class dec4 {
+    public String solution(String myString) {
+        String answer = myString.toLowerCase();
+        return answer;
+    }
+}
