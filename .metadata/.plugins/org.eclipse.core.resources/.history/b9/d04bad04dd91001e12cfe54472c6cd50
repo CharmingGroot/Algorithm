@@ -1,6 +1,6 @@
 package algorithm_prac;
 import java.util.*;
-class dec3_3 {
+class Solution {
     public String[] solution(String[] strArr) {
         String[] answer = this.repeat(strArr);
                         
