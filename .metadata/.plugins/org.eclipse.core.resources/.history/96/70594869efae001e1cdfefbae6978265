@@ -1,6 +1,6 @@
 package algorithm_prac;
 import java.util.*;
-class _240109 {
+class _240109_1 {
     public String solution(String myString) {
         String answer = "";
         

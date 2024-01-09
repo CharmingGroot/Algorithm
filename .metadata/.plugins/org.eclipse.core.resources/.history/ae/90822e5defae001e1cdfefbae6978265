@@ -1,4 +1,3 @@
-package algorithm_prac;
 import java.util.*;
 class _240109 {
     public String solution(String myString) {
