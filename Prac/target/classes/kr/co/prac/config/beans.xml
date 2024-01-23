@@ -6,7 +6,7 @@
 	<bean id="obj1" class="kr.co.prac.beans.TestBean" lazy-init="true"/>
 	
 	<bean id="obj2" class="kr.co.prac.beans.TestBean" lazy-init="true">
-		<constructor-arg value="100"/>
+		<constructor-arg value="100" type="int"/>
 	</bean>
 	
 	<bean id="obj3" class="kr.co.prac.beans.TestBean" lazy-init="true">
@@ -16,6 +16,28 @@
 	<bean id="obj4" class="kr.co.prac.beans.TestBean" lazy-init="true">
 		<constructor-arg value="가보까"/>
 	</bean>
+	
+	<bean id="obj5" class="kr.co.prac.beans.TestBean" lazy-init="true">
+		<constructor-arg value="가보자!" type="java.lang.String"/>
+		<constructor-arg value="1" type="int"/>
+		<constructor-arg value="1.5" type="double"/>
+	</bean>
+	
+	<bean id="obj8" class="kr.co.prac.beans.TestBean2" lazy-init="true">
+		<constructor-arg>
+			<bean class="kr.co.prac.beans.DataBean"/>
+		</constructor-arg>
+		<constructor-arg>
+			<bean class="kr.co.prac.beans.DataBean"/>
+		</constructor-arg>
+	</bean>
+	
+	<bean id="data_bean" class="kr.co.prac.beans.DataBean" scope="prototype"/>
+	
+	<bean id="obj9" class="kr.co.prac.beans.TestBean2" lazy-init="true">
+		<constructor-arg ref="data_bean"/>
+		<constructor-arg ref="data_bean"/>
+	</bean>		
 
 
 </beans>

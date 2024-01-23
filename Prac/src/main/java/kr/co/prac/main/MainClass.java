@@ -2,7 +2,9 @@ package kr.co.prac.main;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import kr.co.prac.beans.DataBean;
 import kr.co.prac.beans.TestBean;
+import kr.co.prac.beans.TestBean2;
 
 public class MainClass {
 
@@ -27,6 +29,9 @@ public class MainClass {
 		TestBean t4 = new TestBean("가즈아");
 		t4.printData();
 		
+		TestBean t5 = new TestBean(1, 0.3, "가즈아");
+		t5.printData();
+		
 		System.out.println("---------------------------------");
 		
 		TestBean obj1 = ctx.getBean("obj1", TestBean.class);
@@ -49,10 +54,31 @@ public class MainClass {
 		
 		
 		
+		System.out.println("---------------------------------");
+		TestBean obj5 = ctx.getBean("obj5", TestBean.class);
+		obj5.printData();
 		
 		
 		
+		System.out.println("=========================================");
 		
+		DataBean d1 = new DataBean();
+		DataBean d2 = new DataBean();
+		
+		TestBean2 t200 = new TestBean2(d1, d2);
+		
+		t200.printData();
+		
+		System.out.println("==============obj8=======================");
+		
+		TestBean2 obj8 = ctx.getBean("obj8", TestBean2.class);
+		obj8.printData();
+		
+		
+		System.out.println("==============obj9=======================");
+		
+		TestBean2 obj9 = ctx.getBean("obj9", TestBean2.class);
+		obj9.printData();
 		
 		
 		ctx.close();

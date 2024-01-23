@@ -35,6 +35,13 @@ public class TestBean {
 		this.data3 = data3;
 	}
 	
+	public TestBean(int data1, double data2, String data3) {
+		System.out.println("TestBean의 생성자 : 변수 3개");
+		this.data1 = data1;
+		this.data2 = data2;
+		this.data3 = data3;
+	}
+	
 	public void printData() {
 		System.out.printf("data1 : %d\n", data1);
 		System.out.printf("data2 : %f\n", data2);
