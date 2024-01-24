@@ -11,7 +11,7 @@ public class MainClass {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		
+		// 생성자를 통한 Bean 주입.
 		
 		
 		ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("kr/co/prac/config/beans.xml");
