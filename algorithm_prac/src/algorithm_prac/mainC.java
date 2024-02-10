@@ -6,11 +6,13 @@ public class mainC {
 
 	public static void main(String[] args) {
 
-		_240110 newClass= new _240110();
-				
-		int[][] answer = newClass.solution(5);
+		_240210_2 newClass= new _240210_2();
 		
-		System.out.println(Arrays.toString(answer)); 
+		int[][] tempArr = {{60, 50}, {30, 70}, {60, 30}, {80, 40}};
+		
+		int answer = newClass.solution(tempArr);
+		
+		System.out.println(answer); 
 		
 	}
 
