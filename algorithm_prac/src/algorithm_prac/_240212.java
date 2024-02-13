@@ -1,6 +1,6 @@
 package algorithm_prac;
 import java.util.*;
-class Solution {
+class _240212 {
     public long solution(long n) {
         
         String[] list = String.valueOf(n).split("");
